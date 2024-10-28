@@ -1,0 +1,121 @@
+    .navbar {
+        background-color: rgba(255, 255, 255, 0.9); 
+        border-radius: 50px;
+        padding: 1px 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 20px auto;
+        max-width: 90%;
+        position: fixed; 
+        top: 20px; 
+        left: 0;
+        right: 0;
+        z-index: 1000; 
+    }
+    .navbar-nav {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .navbar-nav .nav-link {
+        font-weight: bold;
+        color: #333;
+    }
+    .navbar-nav .nav-link:hover {
+        color: #007bff;
+    }
+    .navbar-brand {
+        margin: 5 20px;
+        margin-right: 130px;
+    }
+    .navbar-brand img {
+        height: 50px;
+        margin-top: -10px;
+    }
+    
+    .btn-outline-primary, .btn-primary {
+        border-radius: 20px;
+    }
+
+    /* Homepage Styling */
+    .homepage {
+        position: relative;
+        text-align: center;
+        padding: 150px 20px 50px;
+        height: 100vh; 
+    }
+
+    .background-blur {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('malaya.png');
+        background-size: cover;
+        background-position: center;
+        filter: blur(5px); /* Apply blur to the background only */
+        z-index: -1; /* Make sure the background stays behind the content */
+    }
+
+    .overlay-content {
+        position: relative;
+        z-index: 1; /* Ensure content is above the background */
+        color: white;
+    }
+
+    .overlay-content h1 {
+        margin-top: 50px;
+        font-size: 57px;
+        font-weight: bold;
+    }
+
+    .overlay-content h2 {
+        margin-top: 30px;
+        font-weight: bold;
+    }
+
+    .overlay-content p {
+        margin-top: 18px;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .overlay-content button {
+        font-size: 18px;
+        padding: 10px 20px;
+        background-color: #091623;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+    }
+
+    .btn-primary {
+        background-color: gray;
+        color: rgb(14, 9, 9);
+        border: none;
+        font-weight: bold;
+    }
+
+    .btn-primary:hover {
+        background-color: #007bff;
+        color: white;
+    }
+
+    
+/* Common button style */
+.btn-primary, .overlay-content button {
+    font-size: 10px;
+    padding: 10px 20px;
+    background-color: #091623; /* Dark blue background */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+/* Hover effect for both buttons */
+.btn-primary:hover, .overlay-content button:hover {
+    background-color:#007bff; /* Hover color */
+    color: white;
+}
+
